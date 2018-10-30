@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application</title>
+    <style>
+        .is-rounded img {
+            border-radius: 300000px;
+        }
+
+        figure {
+            margin-right: 0.5rem;
+        }
+
+        .is-leveled {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body class="layout-documentation page-components">
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+      <div class="container">
+        <div class="navbar-brand">
+            <p align="justify" style="margin-top: 1.5em;font-size: 1.5em"> Count++ Dracula : BHGE Team  </p>            
+            <div class="navbar-burger burger" data-target="navMenuColorprimary-example">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+      </div>
+
+    </nav>
+
+    <section class="section ">
+        <div class="columns ">
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+
+                <aside class="menu ">
+                    <p class="menu-label ">
+                        MENU
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a routerLink="" routerLinkActive="active">
+                                    <span class="icon ">
+                                        <i class="fa fa-tachometer"></i>
+                                </span>Dashboard</a>
+                        </li>
+                    </ul>
+                </aside>
+
+            </div>
+            <main class="column ">
+                <router-outlet></router-outlet>
+                
+            </main>
+        </div>
+    </section>
+</body>
+
+</html>
