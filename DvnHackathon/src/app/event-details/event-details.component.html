@@ -1,0 +1,31 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th><abbr title="Inner Cutting Structure">Inner CS</abbr></th>
+      <th><abbr title="Outer Cutting Structure">Outer CS</abbr></th>
+      <th>Dull Code</th>
+      <th>Area</th>
+      <th><abbr title="Bearing Seals">Seals</abbr></th>
+      <th>Gauge</th>
+      <th><abbr title="Other Dull Code">ODC</abbr></th>
+      <th><abbr title="Reason Pulled">Reason</abbr></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>{{recorddata.InnerCS}}</strong></td>
+      <td><strong>{{recorddata.OuterCS}}</strong></td>
+      <td>{{recorddata.DullCode}}</td>
+      <td>{{recorddata.Area}}</td>
+      <td><strong>{{recorddata.Seals}}</strong></td>
+      <td>{{recorddata.Gauge}}</td>
+    <td>{{recorddata.ODC}}</td>
+    <td>{{recorddata.Reason}}</td>
+    </tr>
+  </tbody>
+</table>
+
+  <figure class="image is-square">
+      <img src="http://127.0.0.1:5000/Image?filename={{route_value}}">
+    </figure>
+
