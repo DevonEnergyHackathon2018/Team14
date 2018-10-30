@@ -1,0 +1,43 @@
+<main class="column ">
+
+  <table class="table is-hoverable is-fullwidth">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Date Of Image Capture</th>
+              <th>Grading Level</th>
+              <th>Description</th>
+              <th>Snapshot of Drillbit</th>
+          </tr>
+      </thead>
+      <tfoot>
+          <tr>
+              <th>Name</th>
+              <th>Date Of Image Capture</th>
+              <th>Grading Level</th>
+              <th>Description</th>
+              <th>Snapshot of Drillbit</th>
+          </tr>
+      </tfoot>
+      <tbody>
+          <tr *ngFor="let eachdata of recorddata">
+                  <td>
+                          <a [routerLink]="['/app-event-details', eachdata.Name]" routerLinkActive="active">
+                              <span class="icon ">
+                                  <i class="fa fa-tachometer"></i>
+                              </span>
+                              {{ eachdata.Name}}
+                          </a>
+                      </td>
+                          <td>{{ eachdata.ModifiedTime | date:'MMM-dd-yyyy HH:mm' }}</td>
+                          <td><span class="tag is-{{eachdata.Severity}}">{{eachdata.Severity}}</span></td>
+                          <td>{{ eachdata.Reason}}</td>
+                          <td>
+                                  <figure class="image is-128x128">
+                                      <img src="http://127.0.0.1:5000/Image?filename={{eachdata.Name}}">
+                                    </figure>
+                                  </td>
+          </tr>
+      </tbody>
+  </table>
+</main>
