@@ -1,13 +1,13 @@
 # Team14
 
-##Count++Dracula_Unity_Head
+# Count++Dracula_Unity_Head
 
 # This has the Unity Mobile App code
 
-##DevonHackService
+# DevonHackService
 
 # This has the Python code for serving the Azure Blobs for the Angular App
 
-##DvnHackathon
+# DvnHackathon
 
 # This has the Angular App code for the UI
